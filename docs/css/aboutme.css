@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; 
+}
+
+body {
+    background-image: url("/docs/img/w12.jpg"); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+
+/* Navigation Bar Styling */
+.nav-bar {
+    background-color: transparent; 
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 10; 
+}
+
+.nav-bar .logo {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.nav-bar li {
+    display: inline;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease; 
+}
+
+.nav-bar a:hover {
+    text-decoration: none; 
+    color: red; 
+}
+
+.nav-bar a.active {
+    position: relative;
+}
+
+.nav-bar a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-top: 2px solid red;
+    transform: rotate(-45deg);
+}
+
+
+/* Header Styling */
+.header-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.header-container .image img {
+    width: 300px; 
+    height: 400px; 
+    object-fit: cover;
+    border-radius: 8px;
+    margin-left: 30px; 
+}
+
+.header-info .name h1 {
+    font-size: 36px; 
+    text-align: left;
+    margin-bottom: 10px; 
+    margin-left: 40px;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header-info .info p {
+    text-align: justify;
+    margin-left: 40px;
+    width: 90%;
+    font-size: 18px; 
+    color: white; 
+    line-height: 2;
+    margin-bottom: 20px; 
+}
+
+.header-container .info .contact h3 {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px; 
+    margin-left: 40px;
+}
+
+.header-container .info .contact .socials {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.header-container .info .contact .socials i {
+    font-size: 20px; 
+    color: white;
+}
+
+.header-container .info .contact .socials a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-container .info .contact .socials a:hover {
+    color: red;
+}
+
+/* Contact Styling */
+.contact {
+    text-align: left;
+    margin-top: 30px; 
+}
+
+.contact h3 {
+    font-size: 20px; 
+    font-weight: bold;
+    margin-bottom: 10px; 
+}
+
+.icons-social,
+.icons-info {
+    text-align: left;
+    align-items: center;
+    margin-bottom: 10px; 
+    margin-left: 40px;
+}
+
+.icons-social i,
+.icons-info i {
+    font-size: 20px; 
+    margin-right: 10px;
+    color: white;
+}
+
+.icons-social a,
+.icons-info a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    margin-right: 10px; 
+}
+
+.icons-social a:hover,
+.icons-info a:hover {
+    color: #007bff;
+}
+
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .nav-bar {
+        padding: 2rem;
+    }
+
+    .nav-bar ul {
+        gap: 2.5rem;
+    }
+
+    .header-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .header-container .image img {
+        width: 300px;
+        height: 400px;
+    }
+
+    .header-info .name h1 {
+        font-size: 34px;
+    }
+
+    .header-info .info p {
+        font-size: 18px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}

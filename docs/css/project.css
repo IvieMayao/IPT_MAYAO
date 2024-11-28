@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url("/docs/img/w12.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Navigation Bar Styling */
+.nav-bar {
+    background-color: transparent;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-bar .logo {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.nav-bar li {
+    display: inline;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-bar a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.box {
+    align-items: center;
+    padding: 10px;
+    z-index: 2;
+}
+
+.box h2, .box p {
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  
+.first-project {
+    display: none;
+}
+
+.first-project img{
+    width: 100%;
+}
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dots{
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media (max-width: 480px) { 
+    .nav-bar { 
+        padding: 0.5rem; 
+    } 
+    .nav-bar ul { 
+        gap: 0.5rem; 
+    } 
+    .container { 
+        margin-top: 80px; 
+    } 
+    .box h2, .box p { 
+        font-size: 16px; 
+    } 
+    .slideshow-container { 
+        max-width: 100%; 
+    } 
+    .prev, .next { 
+        font-size: 14px; 
+        padding: 10px; 
+    } 
+    .dot { 
+        height: 10px; 
+        width: 10px; 
+    } 
+}
+
