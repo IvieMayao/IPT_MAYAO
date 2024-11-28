@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/docs/img/portfolio.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif; 
+        }
+
+        body {
+            background-image: url("/docs/img/w12.jpg"); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+            background-attachment: fixed; 
+        }
+
+        .nav-bar {
+            background-color: transparent; 
+            padding: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            position: fixed; 
+            top: 0;
+            width: 100%;
+            z-index: 10; 
+            font-family: Arial, sans-serif;
+        }
+
+        .nav-bar .logo {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+
+        .nav-bar ul {
+            list-style: none;
+            display: flex;
+            gap: 3rem;
+            font-size: 25px;
+            margin-right: 15px;
+        }
+
+        .nav-bar li {
+            display: inline;
+        }
+
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease; 
+        }
+
+        .nav-bar a:hover {
+            text-decoration: none; 
+            color: red; 
+            border-bottom: 2px solid;
+        }
+
+        .nav-bar a.active {
+            position: relative;
+        }
+
+        .nav-bar a.active::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            border-top: 2px solid red;
+            transform: rotate(-45deg);
+        }
+
+        header {
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 70px; 
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            gap: 3rem; 
+            max-width: 1200px;
+            margin: 0 auto; 
+            height: 75vh; 
+        }
+
+        .header-container .image img {
+            width: 280px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-left: 0; 
+        }
+
+        .header-info h1{
+            text-align: left;
+            letter-spacing: 4px;
+            font-size: 80px;
+            color: red;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 15px;
+        }
+
+        .header-info p{
+            text-align: justify;
+            max-width: 600px;
+            margin-left: 0; 
+            font-size: 20px;
+            line-height: 1.5; 
+            font-family: Arial, sans-serif;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="logo">IVIE</div>
+        <ul>
+            <li><a href="activity4.html" class="active">Home</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">About Me</a></li>
+        </ul>
+    </div>
+
+    <!-- Header with Image and Info -->
+    <header>
+        <div class="header-container">
+            <div class="image">
+                <img src="/docs/img/Me.jpg" alt="Ivie Mayao Image">
+            </div>
+            <div class="header-info">
+                <h1>IVIE MAYAO</h1>
+                <p>Aspiring Web Developer with a passion for creating visually appealing and user-friendly websites. My goal is to deliver high-quality, responsive websites that cater to clients' needs. With a keen eye for detail and a dedication to problem-solving, I am eager to learn and grow as a developer, to deliver exceptional results.</p>
+            </div>
+        </div>
+    </header>
+
+</body>
+</html

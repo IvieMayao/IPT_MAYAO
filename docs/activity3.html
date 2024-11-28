@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Biodata</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        .container {
+            margin: 25px;
+            max-width: 1000px;
+            line-height: 1.5;
+        }
+
+        .container h1{
+            text-align: center;
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        .image-section {
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .section-header h2 {
+            text-transform: uppercase;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: center;
+            margin: 0 0 10px 0;
+        }
+
+        .form-section {
+            border: 1px solid black;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .form-row label {
+            width: 48%;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .form-row input {
+            width: 85%;
+            border: none;
+            border-bottom: 1px solid black;
+            padding: 5px;
+            outline: none;
+            font-size: 14px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 id="heading">BIO-DATA</h1>
+
+        <div class="image-section">
+            
+        </div>
+
+        <div class="section-header">
+            <h2>Personal Data</h2>
+        </div>
+        <div class="form-section">
+            <div class="form-row">
+                <label for="position">Position Desired:</label>
+                <input type="text" id="position">
+                <label for="date">Date:</label>
+                <input type="text" id="date">
+            </div>
+            <div class="form-row">
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+                <label for="gender">Gender:</label>
+                <input type="text" id="gender">
+            </div>
+            <div class="form-row">
+                <label for="city-address">City Address:</label>
+                <input type="text" id="city-address">
+                <label for="provincial-address">Provincial Address:</label>
+                <input type="text" id="provincial-address">
+            </div>
+            <div class="form-row">
+                <label for="telephone">Telephone:</label>
+                <input type="text" id="telephone">
+                <label for="cellphone">Cellphone:</label>
+                <input type="text" id="cellphone">
+            </div>
+            <div class="form-row">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email">
+                <label for="birth-date">Date of Birth:</label>
+                <input type="text" id="birth-date">
+            </div>
+            <div class="form-row">
+                <label for="birth-place">Place of Birth:</label>
+                <input type="text" id="birth-place">
+                <label for="civil-status">Civil Status:</label>
+                <input type="text" id="civil-status">
+            </div>
+            <div class="form-row">
+                <label for="citizenship">Citizenship:</label>
+                <input type="text" id="citizenship">
+                <label for="religion">Religion:</label>
+                <input type="text" id="religion">
+            </div>
+        </div>
+
+        <div class="section-header">
+            <h2>Educational Background</h2>
+        </div>
+        <div class="form-section">
+            <div class="form-row">
+                <label for="elementary">Elementary:</label>
+                <input type="text" id="elementary">
+                <label for="elementary-year">Year Graduated:</label>
+                <input type="text" id="elementary-year">
+            </div>
+            <div class="form-row">
+                <label for="highschool">High School:</label>
+                <input type="text" id="highschool">
+                <label for="highschool-year">Year Graduated:</label>
+                <input type="text" id="highschool-year">
+            </div>
+            <div class="form-row">
+                <label for="college">College:</label>
+                <input type="text" id="college">
+                <label for="college-year">Year Graduated:</label>
+                <input type="text" id="college-year">
+            </div>
+            <div class="form-row">
+                <label for="degree">Degree Received:</label>
+                <input type="text" id="degree">
+                <label for="skills">Special Skills:</label>
+                <input type="text" id="skills">
+            </div>
+        </div>
+
+        <div class="section-header">
+            <h2>Employment Record</h2>
+        </div>
+        <div class="form-section">
+            <div class="form-row">
+                <label for="company1">Company Name:</label>
+                <input type="text" id="company1">
+                <label for="position1">Position:</label>
+                <input type="text" id="position1">
+            </div>
+            <div class="form-row">
+                <label for="from1">From:</label>
+                <input type="text" id="from1">
+                <label for="to1">To:</label>
+                <input type="text" id="to1">
+            </div>
+        </div>
+
+        <div class="section-header">
+            <h2>Character Reference</h2>
+        </div>
+        <div class="form-section">
+            <div class="form-row">
+                <label for="ref-name1">Name:</label>
+                <input type="text" id="ref-name1">
+                <label for="ref-company1">Company:</label>
+                <input type="text" id="ref-company1">
+            </div>
+            <div class="form-row">
+                <label for="ref-position1">Position:</label>
+                <input type="text" id="ref-position1">
+                <label for="ref-contact1">Contact No.:</label>
+                <input type="text" id="ref-contact1">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
